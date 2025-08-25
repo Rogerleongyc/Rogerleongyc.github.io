@@ -14,10 +14,15 @@ Maximize the commercial and critical success of upcoming film productions
 — by leveraging historical movie data to generate actionable insights and increase overall revenue by 5%.
 
 Team Objectives
+
 Predict Box Office Revenue (By Kelvin)
+
 Predict User Ratings (By Augustine)
+
 Predicting sentiments for new movies (By Shir Min)
+
 Predict Commercial Success Class (Blockbuster Classification) - (By Roger, myself)
+
 Develop a predictive model to classify whether a movie will be a Blockbuster or Not, based on both textual features (like overview and tagline) and structured metadata (like director, genre, popularity).
 
 My goal was to:
