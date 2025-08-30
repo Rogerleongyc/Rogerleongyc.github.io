@@ -8,11 +8,11 @@ Provide an overview of your team's project business goals and objectives and sta
 
 Team Project: Business Goals & Objectives
 
-Business Goal
+## Business Goal
 Maximize the commercial and critical success of upcoming film productions
 — by leveraging historical movie data to generate actionable insights and increase overall revenue by 5%.
 
-Team Objectives
+## Team Objectives
 
 Predict Box Office Revenue (By Kelvin)
 
@@ -24,7 +24,7 @@ Predict Commercial Success Class (Blockbuster Classification) - (By Roger, mysel
 
 Develop a predictive model to classify whether a movie will be a Blockbuster or Not, based on both textual features (like overview and tagline) and structured metadata (like director, genre, popularity).
 
-My goal was to:
+## My goal was to:
 Extract meaningful signals from movie metadata and text descriptions.
 Apply text analytics techniques (lemmatization, TF-IDF)
 Engineer hybrid features and train classification models (Logistic Regression, Random Forest, SGB).
@@ -49,6 +49,7 @@ Selecting Random Forest as the final model for its balance between performance a
 Implementing a real-time prediction interface using ipywidgets.
 
 ### Data Preparation
+
 Data used originated from a merged IMDb + TMDB metadata dataset. Key steps included:
 
 Filtering Genres: Removed rows where genres_list contained only ['Unknown'] to avoid noisy inputs.
@@ -97,7 +98,7 @@ Each model was trained and validated using an 80/20 split.
 
 ### Evaluation
 
-MODEL CLASSIFIER COMPARISON CHART
+## MODEL CLASSIFIER COMPARISON CHART
 MODEL                 | Model Accuracy           F1 Score             | ROC AUC              | CONFUSION MATRISON
 --------------------- | --------------------- | --------------------- | ---------------------| ---------------------
 Logistic Regression   | l                     |  1                    |      1               | 1
