@@ -1,7 +1,7 @@
 layout: post
 author: Leong Ying Cheu
 title: "Applied Data Science Project Documentation"
-categories: ITD214
+categories: ITD214 PROJECT
 ---
 ## Project Background
 Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
