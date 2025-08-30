@@ -1,4 +1,3 @@
-<img width="767" height="229" alt="image" src="https://github.com/user-attachments/assets/bf6aa44d-8bbd-4c2c-b142-015b73513365" /><img width="767" height="229" alt="image" src="https://github.com/user-attachments/assets/737b4fab-c2d9-4622-8413-bfe6fb6621b5" /><img width="463" height="110" alt="image" src="https://github.com/user-attachments/assets/821ed06f-08a9-446f-b65e-5d59e6742131" />---
 layout: post
 author: Leong Ying Cheu
 title: "Applied Data Science Project Documentation"
