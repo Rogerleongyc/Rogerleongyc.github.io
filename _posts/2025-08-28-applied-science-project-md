@@ -97,8 +97,25 @@ Gradient Boosting (SGB/XGBoost)
 Each model was trained and validated using an 80/20 split.
 
 ### Evaluation
+o assess the performance and practicality of the blockbuster classification model, we applied both quantitative evaluation metrics and an interactive testing tool.
 
-## MODEL CLASSIFIER COMPARISON CHART
+📊 Model Evaluation
+
+Three models were trained: Logistic Regression, Random Forest, and Gradient Boosting (SGB). They were evaluated using accuracy, F1-score, ROC-AUC, and confusion matrices.
+
+Random Forest performed best, balancing high accuracy with generalization, and was selected as the final model.
+
+Evaluation showed good predictive ability in distinguishing between "Blockbuster" and "Not Blockbuster" based on metadata and text.
+
+To ensure the model wasn’t overfitting:
+
+We compared training vs. testing scores.
+
+Used feature selection and TF-IDF regularization.
+
+Applied simple models (like Logistic Regression) for benchmarking.
+
+# MODEL CLASSIFIER COMPARISON CHART
 MODEL                 | Model Accuracy           F1 Score             | ROC AUC              | CONFUSION MATRISON
 --------------------- | --------------------- | --------------------- | ---------------------| ---------------------
 Logistic Regression   | l                     |  1                    |      1               | 1
@@ -107,17 +124,29 @@ SG Boost              | l                     |  1                    |      1  
  
 Although all models showed perfect scores, we recognized the risk of overfitting, particularly for complex models like SGB.
 
-✅ Final Model Chosen: Random Forest
+# Ipywidgets Interface for Live Prediction
 
-Chosen for its interpretability, robustness, and practical generalization.
+An interactive ipywidgets tool was developed in Google Colab to demonstrate and test the model in real time. This user-friendly interface allows users to:
 
-Provides feature importance and handles mixed data types effectively.
+Input key movie attributes like overview, tagline, genres, director, release month, and popularity score.
 
-Less sensitive to noise and performs well with imbalanced datasets.
+Internally apply the same preprocessing: TF-IDF for text, OneHotEncoding for categories, and popularity-based categorization.
+
+Use the trained Random Forest model to instantly return a prediction: 🎬 Blockbuster or 🎞️ Not Blockbuster.
+
+This tool serves as a:
+
+Validation aid for testing different scenarios.
+
+Stakeholder communication tool, helping producers or students explore how small changes in features affect success.
+
+Decision-support prototype, demonstrating the model's practical utility.
+
+
 
 ## Recommendation and Analysis
 
-Key Findings:
+# Key Findings:
 
 Textual features (overview + tagline), after preprocessing and TF-IDF vectorization, contributed significantly to classification performance.
 
@@ -125,8 +154,7 @@ Categorical metadata like Director, genre, and release month helped capture cont
 
 Combining structured metadata with textual insights gave the model a holistic view of each movie, improving its classification confidence.
 
-
-Business Recommendations:
+# Business Recommendations:
 
 Use this model during the early production stage to flag promising movie scripts or ideas.
 
@@ -139,22 +167,22 @@ Extend the model to newer data as more films are released — retraining every 6
 
 ## AI Ethics
 
-1. 🎯 Bias and Fairness
+# 1. 🎯 Bias and Fairness
 Imbalanced training data (e.g., genre or director dominance) can bias the model, underrepresenting niche films. Popularity thresholds may reflect marketing power more than quality. Sentiment features could carry genre-specific language bias.
 
 Mitigation: Apply stratified sampling, evaluate fairness across subgroups, and examine misclassifications to detect underrepresented segments.
 
-2. 🔍 Transparency
+# 2. 🔍 Transparency
 Random Forest and TF-IDF reduce interpretability. Stakeholders may not fully understand how predictions are made.
 
 Mitigation: Provide feature importance charts, document preprocessing steps, and offer confidence scores alongside predictions.
 
-3. 🔐 Data Privacy
+# 3. 🔐 Data Privacy
 Even with public data, proper licensing and ethical use are crucial. Avoid identifiable or sensitive data.
 
 Mitigation: Cite all data sources, exclude private or unnecessary fields, and respect platform licenses (e.g., IMDb, TMDb).
 
-4. ✅ Responsible Use
+# 4. ✅ Responsible Use
 Overreliance on the model may marginalize unique, low-scoring creative ideas and promote formulaic films.
 
 Mitigation: Use the model as decision support, not replacement. Flag uncertain predictions for human review and balance machine insights with human creativity.
@@ -162,3 +190,5 @@ Mitigation: Use the model as decision support, not replacement. Flag uncertain p
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
+
+
