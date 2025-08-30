@@ -114,9 +114,26 @@ Provides feature importance and handles mixed data types effectively.
 Less sensitive to noise and performs well with imbalanced datasets.
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Key Findings:
+
+Textual features (overview + tagline), after preprocessing and TF-IDF vectorization, contributed significantly to classification performance.
+
+Categorical metadata like Director, genre, and release month helped capture contextual patterns, especially for genres or creators historically linked to blockbuster success.
+
+Combining structured metadata with textual insights gave the model a holistic view of each movie, improving its classification confidence.
+
+
+Business Recommendations:
+
+Use this model during the early production stage to flag promising movie scripts or ideas.
+
+Prioritize projects predicted as blockbusters for larger budgets, wider releases, or higher marketing investment.
+
+Monitor feature importance regularly to detect shifts in genre/director preferences over time.
+
+Extend the model to newer data as more films are released — retraining every 6–12 months is recommended to stay relevant.
+
 
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
