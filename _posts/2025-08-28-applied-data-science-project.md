@@ -97,7 +97,7 @@ Each model was trained and validated using an 80/20 split.
 
 ### Evaluation
 
-alt="image" src="https://github.com/user-attachments/assets/4e0a1ace-9ee8-4e49-b2e7-f2618c460b02"
+alt="Classifier Evaluation Chart" src="https://github.com/user-attachments/assets/4e0a1ace-9ee8-4e49-b2e7-f2618c460b02"
 
      
 
