@@ -136,9 +136,27 @@ Extend the model to newer data as more films are released — retraining every 6
 
 
 ## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+1. 🎯 Bias and Fairness
+Imbalanced training data (e.g., genre or director dominance) can bias the model, underrepresenting niche films. Popularity thresholds may reflect marketing power more than quality. Sentiment features could carry genre-specific language bias.
+
+Mitigation: Apply stratified sampling, evaluate fairness across subgroups, and examine misclassifications to detect underrepresented segments.
+
+2. 🔍 Transparency
+Random Forest and TF-IDF reduce interpretability. Stakeholders may not fully understand how predictions are made.
+
+Mitigation: Provide feature importance charts, document preprocessing steps, and offer confidence scores alongside predictions.
+
+3. 🔐 Data Privacy
+Even with public data, proper licensing and ethical use are crucial. Avoid identifiable or sensitive data.
+
+Mitigation: Cite all data sources, exclude private or unnecessary fields, and respect platform licenses (e.g., IMDb, TMDb).
+
+4. ✅ Responsible Use
+Overreliance on the model may marginalize unique, low-scoring creative ideas and promote formulaic films.
+
+Mitigation: Use the model as decision support, not replacement. Flag uncertain predictions for human review and balance machine insights with human creativity.
+
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
