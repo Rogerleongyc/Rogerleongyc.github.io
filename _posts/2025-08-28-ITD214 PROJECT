@@ -97,7 +97,13 @@ Each model was trained and validated using an 80/20 split.
 
 ### Evaluation
 
-alt="Classifier Evaluation Chart" src="https://github.com/user-attachments/assets/4e0a1ace-9ee8-4e49-b2e7-f2618c460b02"
+MODEL CLASSIFIER COMPARISON CHART
+MODEL                 | Model Accuracy           F1 Score             | ROC AUC              | CONFUSION MATRISON
+--------------------- | --------------------- | --------------------- | ---------------------| ---------------------
+Logistic Regression   | l                     |  1                    |      1               | 1
+Random Forest         | l                     |  1                    |      1               | 1
+SG Boost              | l                     |  1                    |      1               | 1             
+ 
 
      
 
