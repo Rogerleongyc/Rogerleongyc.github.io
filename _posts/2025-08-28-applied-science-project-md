@@ -104,11 +104,6 @@ Logistic Regression   | l                     |  1                    |      1  
 Random Forest         | l                     |  1                    |      1               | 1
 SG Boost              | l                     |  1                    |      1               | 1             
  
-
-     
-
-
-	
 Although all models showed perfect scores, we recognized the risk of overfitting, particularly for complex models like SGB.
 
 ✅ Final Model Chosen: Random Forest
