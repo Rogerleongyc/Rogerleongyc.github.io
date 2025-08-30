@@ -1,4 +1,4 @@
----
+<img width="767" height="229" alt="image" src="https://github.com/user-attachments/assets/bf6aa44d-8bbd-4c2c-b142-015b73513365" /><img width="767" height="229" alt="image" src="https://github.com/user-attachments/assets/737b4fab-c2d9-4622-8413-bfe6fb6621b5" /><img width="463" height="110" alt="image" src="https://github.com/user-attachments/assets/821ed06f-08a9-446f-b65e-5d59e6742131" />---
 layout: post
 author: Leong Ying Cheu
 title: "Applied Data Science Project Documentation"
@@ -72,16 +72,47 @@ Cleaned the text using lemmatization, stopword removal (NLTK), and spaCy’s lan
 
 Created clean_text for modeling and vectorization.
 
-Encoding:
+One-hot Encoding:
 
 Applied LabelEncoder to Director, genres_list (first genre used), and release_month.
 
 Ensured popularity_level was not leaked into training until target label encoding.
+
 ### Modelling
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
+Three classifiers were trained on the final dataset using a hybrid feature set:
+
+Text Features: TF-IDF vectorization of the clean_text (max 5000 tokens).
+
+Categorical Features: One-hot encoding of Director, release_month, genres_list, and popularity_level.
+
+Models used:
+
+Logistic Regression
+
+Random Forest Classifier
+
+Gradient Boosting (SGB/XGBoost)
+
+Each model was trained and validated using an 80/20 split.
 
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
+alt="image" src="https://github.com/user-attachments/assets/4e0a1ace-9ee8-4e49-b2e7-f2618c460b02"
+
+     
+
+
+	
+Although all models showed perfect scores, we recognized the risk of overfitting, particularly for complex models like SGB.
+
+✅ Final Model Chosen: Random Forest
+
+Chosen for its interpretability, robustness, and practical generalization.
+
+Provides feature importance and handles mixed data types effectively.
+
+Less sensitive to noise and performs well with imbalanced datasets.
 
 ## Recommendation and Analysis
 Explain the analysis and recommendations
